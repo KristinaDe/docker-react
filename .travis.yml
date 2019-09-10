@@ -4,7 +4,8 @@ services:
     
     
 before_install:
-  - docker build -t kdekic/docker-react -f Dockerfile.dev .
+  - docker build -t KristinaDe/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run kdekic/docker-react npm run test -- --coverage
+  - docker run KristinaDe/docker-react npm run test -- --coverage
+
