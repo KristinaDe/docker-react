@@ -1,11 +1,10 @@
 sudo: required
-services: 
+
+services:
   - docker
-    
-    
+
 before_install:
   - docker build -t kdekic/docker-react -f Dockerfile.dev .
 
 script:
   - docker run kdekic/docker-react npm run test -- --coverage
-
